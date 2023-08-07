@@ -2,6 +2,12 @@ const SinglePlayerDetails = ({ puppyArray, selectedPlayerId }) => {
     console.log('puppyArray', puppyArray);
     console.log('selectedPlayerId', selectedPlayerId);
 
+//     Have a form to CREATE a new player
+// Search for a specific player in a search bar and see a 
+// new list with only puppies with names that match the text 
+// in the search bar.
+
+
     const selectedPlayer = puppyArray.find((player) => player.id === selectedPlayerId);
 
     const renderPLayerDetails =() => {
