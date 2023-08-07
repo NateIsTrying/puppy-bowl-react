@@ -1,10 +1,9 @@
-import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
+
+
 import SinglePlayerDetails from './SinglePlayerDetails';
 
-const AllPlayersList = ({ players }) => {
-  const navigate = useNavigate();
-  const [selectedPlayerId, setSelectedPlayerId] = useState(null)
+const AllPlayersList = ({ players, setSelectedPlayerId, selectedPlayerId }) => {
+
 
   const handleDetailsClick = (playerId) => {
     setSelectedPlayerId(playerId);
